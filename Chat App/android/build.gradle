@@ -1,3 +1,20 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://oss.sonatype.org/content/repositories/snapshots/'
+        }
+    }
+   dependencies {
+       classpath 'com.google.gms:google-services'
+       classpath 'com.android.tools.build:gradle'
+
+   }
+}
+
+
+
 allprojects {
     repositories {
         google()
